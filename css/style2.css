@@ -1,0 +1,174 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: arial;
+}
+.main{
+
+    margin: 2%;
+}
+
+.card{
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+
+}
+
+.title{
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+h1{
+    font-size: 20px;
+}
+
+.des{
+    padding: 3px;
+    text-align: center;
+
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+button{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:10px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+
+.cont{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../dist/img/background.png");
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p{
+    font-size: 20x;
+
+    color: #6a7199;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+}
+.feature-img{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+
+.feature-img2{
+    height: 10%;
+    position: absolute;
+    bottom: 200;
+
+    left: 100;
+}
+.social-links{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+
+
+}
+.social-links a{
+    text-decoration: none;
+    color: #6a7199;
+    padding-right: 20px;
+    font-size: 14px;
+
+
+}
