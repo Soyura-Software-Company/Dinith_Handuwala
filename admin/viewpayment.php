@@ -162,7 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             echo '<div class="form-group">
             <label for="exampleInputPassword1">upload Slip</label><br>
-            <img src ="'.$uploadto.$filename  .'" style ="height:500px">
+            <img src ="'.$uploadto.$filename.'" style ="height:500px">
             <div>';
 
           

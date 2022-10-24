@@ -45,8 +45,34 @@
                     </a>
                     <ul class="nav nav-treeview">
 
+                    <li class="nav-item">
+                            <a href="studentdetails.php" class="nav-link">
+                                <i class="nav-icon fas fa-school"></i>
+                                <p>
+                                    All Students
+                                </p>
+                            </a>
+                        </li>
+                       
 
-                        <li class="nav-item">
+
+
+                    </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon far fa-user"></i>
+                        <p>
+                            Class Management
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+
+
+                    <li class="nav-item">
                             <a href="addnewclass.php" class="nav-link">
                                 <i class="nav-icon fas fa-school"></i>
                                 <p>
@@ -64,7 +90,29 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon far fa-user"></i>
+                        <p>
+                            Payment Management
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+
+
+
+
+                    <li class="nav-item">
                             <a href="studentpaymentdetails.php" class="nav-link">
                                 <i class="nav-icon fas fa-credit-card"></i>
                                 <p>
@@ -76,6 +124,7 @@
 
                     </ul>
                 </li>
+
 
 
 
