@@ -22,7 +22,7 @@ class AdminUserService extends Adminuser{
              `AdminName`,
               `UseName`, 
               `Password`,
-               `Email`,
+               `Email`, 
                 `Mobile`, 
                 
                 ) VALUES (

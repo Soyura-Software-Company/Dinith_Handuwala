@@ -178,7 +178,7 @@ $gradeId = null;
     </script>';
 
     echo "<script> window.location.href='php/dashbord.php';</script>";
-
+    //echo "<script> window.location.href='verifycode.php';</script>";
    
   
       }

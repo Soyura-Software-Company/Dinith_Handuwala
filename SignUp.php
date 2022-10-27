@@ -38,7 +38,20 @@ require_once ('service/studentuserservice.php');
 </head>
 
 <body class="hold-transition login-page" id="login">
+
+
+
+<!-- Button trigger modal -->
+
+
+
+
+
 <?php
+
+
+
+
 $userName = "";
 $password = "";
 $repassword = "";
@@ -47,6 +60,12 @@ $check = "";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 if(isset($_POST['submit'])){
+
+  $modal = '';
+
+echo $modal;
+
+
     $userName = stripslashes($_POST['username']);
     $password = stripslashes($_POST['password']);
     $repassword = stripslashes($_POST['repassword']);
@@ -182,7 +201,9 @@ if($resultCheck > 0 ){
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" name="submit" class="btn btn-info btn-block">Register</button>
+              <button type="submit" name="submit" class="btn btn-info btn-block" data-target="#exampleModalLong" data-toggle="modal"> Register</button>
+
+</button>
             </div>
             <!-- /.col -->
           </div>
