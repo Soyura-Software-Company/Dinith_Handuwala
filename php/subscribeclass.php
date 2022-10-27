@@ -173,14 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
           }
       
           // checking file size
-          if ($filesize > 500000) {
-            $errors[] = 'File size should be less than 5mb.';
-          }
-          
-          if (empty($errors)) {
-           $fileuplload =  move_uploaded_file($tempname, $uploadto . $filename);
 
-          }
 
         
 
@@ -209,8 +202,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
 
 
-          $payment->__constructWithOutId($filename, $note, $amount, $date, $ssstId, $id, $newId2);
-          $succ = $payment->insertPayment();
+         
 
 
           $pId = null;
@@ -224,9 +216,17 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
             }
           }
 
-
-          $paymentStatus->__constructWithOutId('0', $ssstId, $id, $timetableid, $pId);
+          if (empty($errors)) {
+            $fileuplload =  move_uploaded_file($tempname, $uploadto . $filename);
+            $payment->__constructWithOutId($filename, $note, $amount, $date, $ssstId, $id, $newId2);
+            $succ = $payment->insertPayment();
+            $paymentStatus->__constructWithOutId('0', $ssstId, $id, $timetableid, $pId);
           $paymentStatus->insertPaymentStatus();
+ 
+           }
+ 
+
+          
           
 
           if(empty($errors)) {

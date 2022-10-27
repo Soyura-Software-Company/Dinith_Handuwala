@@ -6,7 +6,7 @@ if (!isset($_SESSION)) {
 }
 $db = new dbConnect();
 
-  $logBtn =  '<a class="nav-link " href="../view/login.php">LOGIN</a>';
+  $logBtn =  '<a class="nav-link " href="../view/login.php">STUDENT LOGIN</a>';
   $regBtn = '<a class="nav-link " href="../SignUp.php">REGISTER</a>';
 ?>
 <!doctype html>
@@ -104,6 +104,11 @@ $db = new dbConnect();
                     <?php
                             echo $regBtn;
                         ?>
+                        
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link " href="../admin/index.php">ADMIN LOGIN</a>
                         
                     </li>
 
